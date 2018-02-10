@@ -3,8 +3,6 @@
     src: url("../fonts/DISTGRG_-webfont.woff") format("woff");
 }
 
-
-
 .star {
     position: absolute;
     width: 1px;
@@ -45,18 +43,13 @@
     z-index: 1;
     animation: logo 9s ease-out 9s;
     opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
     padding: auto;
     font: bold 50px 'DistantGalaxy';
-    width: inherit;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-text {
-    fill: #FFE81F !important;
+    display: block;
+    color: #FFE81F !important;
 }
 
 

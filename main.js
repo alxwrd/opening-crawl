@@ -37,11 +37,7 @@ document.getElementById("go").onclick = function () {
         elements.forEach(function(element) {
             var target = document.getElementById(element);
             var input = document.getElementById(element + "-input");
-            if (element === "logo") {
-                target.innerHTML = input.value || input.placeholder;
-            } else {
-                target.innerText = input.value || input.placeholder;
-            };
+            target.innerHTML = input.value || input.placeholder;
         });
 
         document.getElementById("crawl-container").style.display = "block";
