@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Opening Crawl</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/crawl.css">
+        <style>
+            @import url("css/crawl.css")
+        </style>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <div id="crawl-details">
+            <label for="intro-input">Intro</label>
+            <input id="intro-input" type="text"
+                placeholder="A long time ago, in a galaxy far, far away...">
+
+            <label for="logo-input">Logo</label>
+            <input id="logo-input" type="text" placeholder="STAR WARS">
+
+            <label for="title-input">Title</label>
+            <input id="title-input" type="text" placeholder="Episode IV">
+
+            <label for="subtitle-input">Subtitle</label>
+            <input id="subtitle-input" type="text" placeholder="A NEW CRAWL">
+
+            <label for="crawl-input">Crawl Text</label>
+            <textarea id="crawl-input" cols="40" rows="5">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar tellus eget est pretium, ac malesuada massa sagittis. Mauris pretium consequat porttitor. Curabitur sit amet purus molestie, mollis neque id, sodales est. Pellentesque interdum eget urna sit amet euismod. Maecenas aliquet ex nec augue iaculis maximus. Nam tincidunt quis orci ut laoreet. In convallis ante non sapien ultrices cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ante ante, mattis sit amet nibh at, tincidunt euismod urna. Vestibulum eget risus et arcu facilisis ultrices eget sagittis ante. Phasellus luctus sagittis est, eu sagittis lectus faucibus at.
+            </textarea>
+
+            <label for"audio-input">Audio File</label>
+            <input id="audio-input" type="text"
+            placeholder="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg">
+
+            <input id="go" type="button" value="Go!">
+        </div>
+        <div id="crawl-container">
+
+            <section id="intro" class="intro"></section>
+            <svg height="500px" class="logo" viewBox="0 0 693.615 419.375"
+                enable-background="new 0 0 693.615 419.375"
+                preserveAspectRatio="xMaxYMax meet">
+                <text x="0" y="50%" id="logo"></text>
+            </svg>
+            <div id="board">
+                <div id="content">
+                    <p id="title"></p>
+                    <p id="subtitle"></p>
+                    <p id="crawl"> </p>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>

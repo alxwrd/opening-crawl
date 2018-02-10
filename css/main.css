@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+input, label, textarea {
+    display: block;
+    width: 100%;
+    width: 100%;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+}
+
+label {
+    color: rgb(75, 213, 238);
+}
+
+input, textarea {
+    margin-bottom: 1em;
+}
+
+#crawl-container {
+    overflow: hidden;
+    display: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#crawl-details {
+    width: 50%;
+    margin: auto;
+}
