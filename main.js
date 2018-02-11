@@ -26,7 +26,6 @@ function getRandomPosition() {
 
 document.getElementById("go").onclick = function () {
     document.getElementById("crawl-details").style.display = "none";
-    document.getElementById("crawl").style.display = "inline";
 
     var input = document.getElementById("audio-input");
     var audio = new Audio(input.value || input.placeholder);
