@@ -36,7 +36,14 @@ document.getElementById("go").onclick = function () {
         elements.forEach(function(element) {
             var target = document.getElementById(element);
             var input = document.getElementById(element + "-input");
-            target.innerHTML = input.value || input.placeholder;
+            if (element === "crawl") {
+                var text = input.value || input.placeholder;
+                text.split("\n").forEach(function(item) {
+                    target.innerHTML += "<p>" + item + "</p>";
+                });
+            } else {
+                target.innerHTML = input.value || input.placeholder;
+            };
         });
 
         document.getElementById("crawl-container").style.display = "block";
