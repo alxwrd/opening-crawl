@@ -33,3 +33,56 @@ input, textarea {
     width: 50%;
     margin: auto;
 }
+
+#finish-container {
+    display: none;
+}
+
+body {
+    background-color: black;
+}
+
+.planet {
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 60px -20px rgba(100, 100, 230, 0.72), -14px -15px 40px -10px rgba(100, 100, 230, 0.23);
+    animation: slideUp 30s linear;
+    animation-fill-mode: forwards;
+}
+
+.planet .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-shadow: inset -10px -10px 40px #000, inset 10px 10px 30px -10px rgba(100, 100, 230, 0.6);
+    border-radius: 50%;
+}
+
+.planet .background {
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/60/b9/23/60b92339cfc25bc58c95adc12356756a.jpg);
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.planet .wrap {
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+@keyframes slideUp {
+    0%{
+        top:110%;
+    }
+    100%{
+        top:50%;
+    }
+}
