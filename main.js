@@ -5,7 +5,7 @@ const numStars = 100;
 
 // For every star we want to display
 for (let i = 0; i < numStars; i++) {
-    let star = document.createElement("div");  
+    let star = document.createElement("div");
     star.className = "star";
     var xy = getRandomPosition();
     star.style.top = xy[0] + 'px';
@@ -15,11 +15,11 @@ for (let i = 0; i < numStars; i++) {
 }
 
 // Gets random x, y values based on the size of the container
-function getRandomPosition() {  
+function getRandomPosition() {
     var y = window.innerWidth;
     var x = window.innerHeight;
-    var randomX = Math.floor(Math.random()*x);
-    var randomY = Math.floor(Math.random()*y);
+    var randomX = Math.floor(Math.random() * x);
+    var randomY = Math.floor(Math.random() * y);
     return [randomX, randomY];
 }
 
@@ -29,16 +29,16 @@ document.getElementById("go").onclick = function () {
 
     var input = document.getElementById("audio-input");
     var audio = new Audio(input.value || input.placeholder);
-    audio.oncanplaythrough = function() {
+    audio.oncanplaythrough = function () {
 
         var elements = ["intro", "logo", "title", "subtitle", "crawl"];
 
-        elements.forEach(function(element) {
+        elements.forEach(function (element) {
             var target = document.getElementById(element);
             var input = document.getElementById(element + "-input");
             if (element === "crawl") {
                 var text = input.value || input.placeholder;
-                text.split("\n").forEach(function(item) {
+                text.split("\n").forEach(function (item) {
                     target.innerHTML += "<p>" + item + "</p>";
                 });
             } else {

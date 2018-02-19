@@ -1,39 +1,40 @@
 <!doctype html>
 <html class="no-js" lang="en-gb">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Opening Crawl</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/crawl.css">
-        <style>
-            @import url("css/crawl.css")
-        </style>
-    </head>
-    <body>
-        <!--[if lte IE 9]>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Opening Crawl</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/crawl.css">
+    <style>
+        @import url("css/crawl.css")
+    </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div id="crawl-details">
-            <label for="intro-input">Intro</label>
-            <input id="intro-input" type="text"
-                placeholder="A long time ago, in a galaxy far, far away...">
+    <div id="crawl-details">
+        <label for="intro-input">Intro</label>
+        <input id="intro-input" type="text" placeholder="A long time ago, in a galaxy far, far away...">
 
-            <label for="logo-input">Logo</label>
-            <input id="logo-input" type="text" placeholder="STAR WARS">
+        <label for="logo-input">Logo</label>
+        <input id="logo-input" type="text" placeholder="STAR WARS">
 
-            <label for="title-input">Title</label>
-            <input id="title-input" type="text" placeholder="Episode IV">
+        <label for="title-input">Title</label>
+        <input id="title-input" type="text" placeholder="Episode IV">
 
-            <label for="subtitle-input">Subtitle</label>
-            <input id="subtitle-input" type="text" placeholder="A NEW CRAWL">
+        <label for="subtitle-input">Subtitle</label>
+        <input id="subtitle-input" type="text" placeholder="A NEW CRAWL">
 
-            <label for="crawl-input">Crawl Text</label>
-            <textarea id="crawl-input" cols="40" rows="5">
+        <label for="crawl-input">Crawl Text</label>
+        <textarea id="crawl-input" cols="40" rows="5">
                 <!--http://forcemipsum.com/-->
 Aren't you a little short to be a stormtrooper? What? Oh...the uniform. I'm Luke Skywalker. I'm here to rescue you. You're who? I'm here to rescue you. I've got your R2 unit. I'm here with Ben Kenobi. Ben Kenobi is here! Where is he? Come on!
 
@@ -48,34 +49,33 @@ What? Yahoo! Look out! You're all clear, kid. Now let's blow this thing and go h
 Luke? Luke? Luke? Have you seen Luke this morning? He said he had some things to do before he started today, so he left early. Uh? Did he take those two new droids with him? I think so. Well, he'd better have those units in the south range repaired be midday or there'll be hell to pay! Wait, there's something dead ahead on the scanner. It looks like our droid...hit the accelerator.
             </textarea>
 
-            <label for"audio-input">Audio File</label>
-            <input id="audio-input" type="text"
-            placeholder="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg">
+        <label for "audio-input">Audio File</label>
+        <input id="audio-input" type="text" placeholder="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg">
 
-            <input id="go" type="button" value="Go!">
-        </div>
-        <div id="crawl-container">
+        <input id="go" type="button" value="Go!">
+    </div>
+    <div id="crawl-container">
 
-            <section id="intro" class="intro"></section>
-            <section id="logo" class="logo"></section>
-            <div id="board">
-                <div id="content">
-                    <p id="title"></p>
-                    <p id="subtitle"></p>
-                    <p id="crawl"> </p>
-                </div>
+        <section id="intro" class="intro"></section>
+        <section id="logo" class="logo"></section>
+        <div id="board">
+            <div id="content">
+                <p id="title"></p>
+                <p id="subtitle"></p>
+                <p id="crawl"> </p>
             </div>
         </div>
-        <div id="finish-container">
-            <div class="planet"> 
-                <div class="wrap">
-                    <div class="background"></div>
-                </div>
-                <div class="mask"></div>
+    </div>
+    <div id="finish-container">
+        <div class="planet">
+            <div class="wrap">
+                <div class="background"></div>
             </div>
+            <div class="mask"></div>
         </div>
+    </div>
 
+    <script src="main.js"></script>
+</body>
 
-        <script src="main.js"></script>
-    </body>
 </html>

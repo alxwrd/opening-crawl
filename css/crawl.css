@@ -11,6 +11,7 @@
 }
 
 /* Set the animation, color, size and hide the text */
+
 .intro {
     position: absolute;
     top: 30%;
@@ -39,7 +40,8 @@
 }
 
 /* Set the animation & hide the logo */
-.logo {    
+
+.logo {
     z-index: 1;
     animation: logo 9s ease-out 9s;
     opacity: 0;
@@ -52,8 +54,8 @@
     color: #FFE81F !important;
 }
 
-
 /* Scale the logo down and maintain it centered */
+
 @keyframes logo {
     0% {
         transform: scale(2.75);
@@ -74,6 +76,7 @@ p {
 }
 
 /* Set the font, lean the board, position it */
+
 #board {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     transform: perspective(300px) rotateX(25deg);
@@ -90,7 +93,7 @@ p {
     left: 50%;
 }
 
-#board:after {    
+#board:after {
     position: absolute;
     content: ' ';
     bottom: 60%;
@@ -100,6 +103,7 @@ p {
 }
 
 /* Set the scrolling animation and position it */
+
 #content {
     animation: scroll 100s linear 16s;
     position: absolute;

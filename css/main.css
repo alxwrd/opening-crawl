@@ -79,10 +79,10 @@ body {
 }
 
 @keyframes slideUp {
-    0%{
-        top:110%;
+    0% {
+        top: 110%;
     }
-    100%{
-        top:50%;
+    100% {
+        top: 50%;
     }
 }
